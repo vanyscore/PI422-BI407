@@ -1,0 +1,19 @@
+﻿@model AspCitylink.Models.CategoriesMenuModel
+
+<div class="list-group">
+    <a href="/ "
+       class="list-group-item">
+        Все товары
+    </a>
+
+    @foreach (var item in Model.Categories)
+    {
+        string strActive = item.Name == Model.ActiveCategoryName ?
+            strActive = "active" : "";
+
+        <a href="/@item.Name"
+           class="list-group-item @strActive">
+            @item.Name
+        </a>
+    }
+</div>

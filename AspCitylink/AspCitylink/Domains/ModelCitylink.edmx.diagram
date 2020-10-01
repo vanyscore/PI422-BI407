@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="155c3f9e96514ae0a1102d039ba1cd71" Name="Diagram1" DisplayType="true" ZoomLevel="127" >
+        <EntityTypeShape EntityType="ModelCitylink.Category" Width="2.5" PointX="4.5" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelCitylink.Product" Width="1.75" PointX="7.875" PointY="0.625" />
+        <EntityTypeShape EntityType="ModelCitylink.Sale" Width="2.625" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelCitylink.Store" Width="2" PointX="7.875" PointY="3.875" />
+        <EntityTypeShape EntityType="ModelCitylink.Customer" Width="2.5" PointX="4.625" PointY="3.5" />
+        <EntityTypeShape EntityType="ModelCitylink.Client" Width="2.5" PointX="11" PointY="3.875" />
+        <AssociationConnector Association="ModelCitylink.CategoryProduct" />
+        <AssociationConnector Association="ModelCitylink.ProductSale" />
+        <AssociationConnector Association="ModelCitylink.CustomerSale" />
+        <AssociationConnector Association="ModelCitylink.ClientSale" />
+        <AssociationConnector Association="ModelCitylink.StoreProduct" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

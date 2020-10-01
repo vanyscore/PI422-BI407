@@ -1,0 +1,120 @@
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\AspCitylink.dll.config
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\AspCitylink.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\AspCitylink.pdb
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\csc.exe
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\csc.exe.config
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\csc.rsp
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\csi.exe
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\csi.rsp
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.AppContext.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.Collections.Immutable.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.IO.FileSystem.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\System.Reflection.Metadata.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\vbc.exe
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\vbc.exe.config
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\vbc.rsp
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\VBCSCompiler.exe
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\roslyn\VBCSCompiler.exe.config
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\EntityFramework.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Helpers.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Mvc.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Razor.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.Deployment.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.Razor.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\EntityFramework.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Razor.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.Deployment.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Webpages.Razor.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Helpers.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\System.Web.Mvc.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\EntityFramework.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Razor.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.Deployment.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.Razor.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Helpers.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\System.Web.Mvc.resources.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\obj\Debug\AspCitylink.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\obj\Debug\AspCitylink.csproj.CopyComplete
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\obj\Debug\AspCitylink.dll
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\obj\Debug\AspCitylink.pdb
+D:\Visual Studio 2010\3nd\AspCitylink\AspCitylink\bin\ru\EntityFramework.SqlServer.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\AspCitylink.dll.config
+d:\MIDIS\AspCitylink\AspCitylink\bin\AspCitylink.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\AspCitylink.pdb
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\csc.exe
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\csc.exe.config
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\csc.rsp
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\csi.exe
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\csi.rsp
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.CSharp.Core.targets
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\Microsoft.VisualBasic.Core.targets
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.AppContext.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.Collections.Immutable.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.Diagnostics.StackTrace.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.IO.FileSystem.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.IO.FileSystem.Primitives.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\System.Reflection.Metadata.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\vbc.exe
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\vbc.exe.config
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\vbc.rsp
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\VBCSCompiler.exe
+d:\MIDIS\AspCitylink\AspCitylink\bin\roslyn\VBCSCompiler.exe.config
+d:\MIDIS\AspCitylink\AspCitylink\bin\EntityFramework.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\EntityFramework.SqlServer.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\Microsoft.Web.Infrastructure.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Helpers.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Mvc.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Razor.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.Deployment.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.Razor.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\EntityFramework.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\EntityFramework.SqlServer.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Razor.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.Deployment.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Webpages.Razor.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Helpers.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\System.Web.Mvc.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\EntityFramework.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\EntityFramework.SqlServer.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Razor.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.Deployment.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Webpages.Razor.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Helpers.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\bin\ru\System.Web.Mvc.resources.dll
+d:\MIDIS\AspCitylink\AspCitylink\obj\Debug\AspCitylink.csproj.CoreCompileInputs.cache
+d:\MIDIS\AspCitylink\AspCitylink\obj\Debug\AspCitylink.csproj.CopyComplete
+d:\MIDIS\AspCitylink\AspCitylink\obj\Debug\AspCitylink.dll
+d:\MIDIS\AspCitylink\AspCitylink\obj\Debug\AspCitylink.pdb

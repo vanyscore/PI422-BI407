@@ -1,0 +1,54 @@
+﻿@using AspCitylink.Helpers
+@model AspCitylink.Models.PageModel
+
+@{
+    ViewBag.Title = "Товары";
+}
+
+<h2>@ViewBag.Title (@Model.ActiveCategoryName)</h2>
+
+<!-- Бюджетный вариант
+<a href="Page1">1</a>
+<a href="Page2">2</a>
+<a href="Page3">3</a>
+<a href="Page4">4</a>
+<a href="Page5">5</a>
+ -->
+<!-- Продвинутый вариант -->
+@Html.PageLinksAdvanced(Model)
+
+@foreach (var item in Model.Products)
+{
+    <div class="panel-primary">
+        <div class="panel-heading">
+            Id= @item.ProductId
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <img src="~/Content/@item.ImageUrl" />
+                </div>
+                <div class="col-lg-10 col-sm-6">
+
+                    @Html.ActionLink(
+                     item.Title.Split(',').First(),
+                     "Details",
+                     new
+                     {
+                         @id = item.ProductId
+                     }
+                   )
+
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            Цена @item.Price.ToString("c")
+        </div>
+    </div>
+    <br />
+}
+
+<br/>
+@Html.PageLinksAdvanced(Model)
+
