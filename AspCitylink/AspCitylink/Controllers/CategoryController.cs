@@ -10,6 +10,7 @@ namespace AspCitylink.Controllers
 {
     public class CategoryController : Controller
     {
+        // контейнер для базы
         protected readonly ModelCitylinkContainer _db;
 
         public CategoryController()
