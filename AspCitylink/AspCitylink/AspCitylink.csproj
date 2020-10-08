@@ -1077,6 +1077,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BusinessLogic\Cart.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Domains\Category.cs">
@@ -1137,6 +1139,8 @@
     <Content Include="Views\Product\NotFound.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Category\PartialViewMenu.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Cart\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,53 @@
+﻿@model AspCitylink.BusinessLogic.Cart
+
+@{
+    ViewBag.Title = "Корзина";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Стоимость</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var record in Model.Records)
+    {
+        <tr>
+            <td>@record.Product.Title.Split(',').First()</td>
+            <td>@record.Product.Price.ToString("c")</td>
+            <td>
+
+                @Html.ActionLink("+", "Increase", "Cart",
+                new
+                {
+                    @id = record.Product.ProductId,
+                    @returnUrl = Request?.Url?.PathAndQuery
+                }, new {@class = "btn btn-default"})
+
+                @record.Quantity
+
+                @Html.ActionLink("-", "Decrease", "Cart",
+                new
+                {
+                    @id = record.Product.ProductId,
+                    @returnUrl = Request?.Url?.PathAndQuery
+                }, new {@class = "btn btn-default" })
+
+            </td>
+            <td>@record.Cost.ToString("c")</td>
+        </tr>
+    }
+        <tr>
+            <td colspan="3">Итого:</td>
+            <td>@Model.TotalCost.ToString("c")</td>
+        </tr>
+    </tbody>
+    
+</table>
+

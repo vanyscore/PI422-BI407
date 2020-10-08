@@ -42,8 +42,25 @@
                 </div>
             </div>
         </div>
-        <div class="panel-footer">
-            Цена @item.Price.ToString("c")
+        <div class="panel-footer row">
+            <div class="col-lg-2 col-sm-6">
+                Цена @item.Price.ToString("c")
+            </div>
+            
+            @using (Html.BeginForm("Purchase", "Cart", 
+                new
+                {
+                    @id= item.ProductId,
+                    @returnUrl = Request?.Url?.PathAndQuery
+                }))
+            {
+                <div class="col-lg-10 col-sm-6">
+                    <button type="submit" class="btn btn-success pull-right">
+                        Купить
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </button>
+                </div>
+            }
         </div>
     </div>
     <br />
@@ -52,3 +69,7 @@
 <br/>
 @Html.PageLinksAdvanced(Model)
 
+<!--
+    
+Html.Hidden("id", item.ProductId)
+-->

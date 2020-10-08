@@ -60,7 +60,7 @@ namespace AspCitylink
                 new { page = @"\d+" }
             );
 
-
+            // /Cart/Purchase/4
             routes.MapRoute(
                 name: "Full",
                 url: "{controller}/{action}/{id}",
