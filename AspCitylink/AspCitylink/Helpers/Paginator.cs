@@ -88,9 +88,11 @@ namespace AspCitylink.Helpers
         private static string GenerateLink(int i, PageModel model)
         {
             var tagLi = new TagBuilder("li"); // <li></li>
-
             var tagA = new TagBuilder("a"); // <a></a>
-            tagA.MergeAttribute("href", $"/{model.ActiveCategoryName}/Page{i}"); // <a href="Page1"></a>
+
+            string category = model.ActiveCategoryName == null ? string.Empty : $"/{model.ActiveCategoryName}";
+
+            tagA.MergeAttribute("href", $"{category}/Page{i}"); // <a href="Page1"></a>
             tagA.InnerHtml = $"{i:d2}"; // <a href="Page1"> 1 </a>
 
             tagLi.InnerHtml = tagA.ToString();

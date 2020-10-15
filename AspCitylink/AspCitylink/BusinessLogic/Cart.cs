@@ -8,6 +8,8 @@ namespace AspCitylink.BusinessLogic
 {
     public class Cart
     {
+        public int Count => Records.Sum(r => r.Quantity);
+
         public List<CartRecord> Records { get; set; }
 
         public int TotalCost => Records.Sum(r => r.Cost);

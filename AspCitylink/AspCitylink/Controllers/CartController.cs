@@ -18,9 +18,27 @@ namespace AspCitylink.Controllers
             _db = new ModelCitylinkContainer();
         }
 
-        public ActionResult Details()
+        public ActionResult CreateOrder()
+        {
+            return View();
+        }
+
+        public ActionResult ContinueShopping(string returnUrl)
+        {
+            return new RedirectResult(returnUrl);
+        }
+
+        // виджет корзины - как частичное представление
+        public PartialViewResult PartialViewCartWidget()
         {
             var cart = GetCart();
+            return PartialView(cart);
+        }
+
+        public ActionResult Details(string returnUrl)
+        {
+            var cart = GetCart();
+            ViewBag.ReturnUrl = returnUrl;
 
             return View(cart);
         }

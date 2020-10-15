@@ -1141,6 +1141,9 @@
     <Content Include="Views\Category\PartialViewMenu.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Cart\Details.cshtml" />
+    <Content Include="Views\Cart\PartialViewCartWidget.cshtml" />
+    <Content Include="Views\Shared\DemoTest.cshtml" />
+    <Content Include="Views\Cart\CreateOrder.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

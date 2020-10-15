@@ -1,0 +1,13 @@
+﻿@model AspCitylink.BusinessLogic.Cart
+
+@if (Model.Count > 0)
+{
+    using (Html.BeginForm("Details", "Cart", new {@returnUrl = Request?.Url?.PathAndQuery}))
+    {
+        <button class="btn btn-default" type="submit">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span class="badge">@Model.Count</span>
+            @Model.TotalCost.ToString("c")
+        </button>
+    } 
+}
