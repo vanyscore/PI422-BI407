@@ -18,16 +18,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
 
-                @Html.ActionLink("AspCitylink", 
-                    "List", "Product", new { area = "" }, 
+
+                @Html.ActionLink("AspCitylink",
+                    "List", "Product", new { area = "" },
                     new { @class = "navbar-brand" })
 
-                <!-- 
-                Html.ActionLink("Корзина", "Details", "Cart")
-                Html.Partial("DemoTest")
-                -->
+                @if (User.IsInRole("admin"))
+                {
+                    @Html.ActionLink("Управление ролями",
+                        "Index", "Roles", new { area = "" },
+                        new { @class = "navbar-brand" });
+                }
+                else
+                {
+                    @Html.ActionLink("Контакты",
+                        "Contact", "Home", new { area = "" },
+                        new { @class = "navbar-brand" });
+                }
+
+                <!--
+    Html.ActionLink("Корзина", "Details", "Cart")
+    Html.Partial("DemoTest")
+    -->
 
             </div>
             <div class="navbar-right">
