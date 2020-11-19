@@ -26,20 +26,20 @@ namespace AspCitylink.Infrastructure
         : DropCreateDatabaseAlways<UsersDbContext>
     {
         private ApplicationUserManager _userManager;
-        private RoleManager<IdentityRole> _roleManager;
+        private RoleManager<UserRole> _roleManager;
 
         protected override void Seed(UsersDbContext context)
         {
             // хотим в базу сразу стандартные роли
             _userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(context));
-            _roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            _roleManager = new RoleManager<UserRole>(new RoleStore<UserRole>(context));
 
             string[] roles = {"admin", "user", "content_manager", "sales_manager"};
             foreach (var roleName in roles)
             {
                 if (!_roleManager.RoleExists(roleName))
                 {
-                    _roleManager.Create(new IdentityRole(roleName));
+                    _roleManager.Create(new UserRole(roleName));
                 }
             }
             // создадим админа

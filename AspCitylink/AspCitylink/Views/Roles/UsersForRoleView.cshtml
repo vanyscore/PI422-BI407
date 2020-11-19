@@ -1,0 +1,46 @@
+﻿@model AspCitylink.Models.RoleAndUsersModel
+
+@{
+    ViewBag.Title = $"Добавить юзеру роль ({Model.Role.Name})";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Пользователи (первые 20)
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Логин</th>
+                <th>Действие</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Firstname</td>
+                    <td>
+                        @user.Lastname
+                    </td>
+                    <td>
+                        @user.UserName
+                    </td>
+                    <td>
+                        @Html.ActionLink("Добавить", "AddUserToRole", "Roles",
+                            new {  roleId = Model.Role.Id, userId = user.Id }, new
+                            {
+                                @class= "btn btn-default"
+                            })
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

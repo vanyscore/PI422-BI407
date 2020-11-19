@@ -1,7 +1,46 @@
-﻿
+﻿@using AspCitylink.Helpers
+@model List<AspCitylink.Infrastructure.UserRole>
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Системные Роли";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Информация о ролях
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Пользователи</th>
+                <th>Действия</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach (var role in Model)
+                {
+                    <tr>
+                        <td>@role.Name</td>
+                        <td>
+                            @foreach(var user in role.Users)
+                            {
+                                <p>@Html.GetUserInfo(user.UserId)</p>
+                            }
+                        </td>
+                        <td>
+                        @Html.ActionLink("Добавить пользователя", "UsersForRoleView", "Roles",
+                            new { roleId = role.Id }, new
+                            {
+                                @class="btn btn-success"
+                            })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
 

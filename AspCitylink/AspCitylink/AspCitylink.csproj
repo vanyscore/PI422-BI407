@@ -210,15 +210,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlExtension.cs" />
     <Compile Include="Helpers\Paginator.cs" />
     <Compile Include="Infrastructure\ApplicationSignInManager.cs" />
     <Compile Include="Infrastructure\ApplicationUserManager.cs" />
+    <Compile Include="Infrastructure\UserRole.cs" />
+    <Compile Include="Infrastructure\UserRolesManager.cs" />
     <Compile Include="Infrastructure\UsersDbContext.cs" />
     <Compile Include="Infrastructure\ApplicationUser.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CategoriesMenuModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PageModel.cs" />
+    <Compile Include="Models\RoleAndUsersModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -310,6 +314,7 @@
     <Content Include="Views\Product\List.cshtml" />
     <Content Include="Views\Product\NotFound.cshtml" />
     <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\UsersForRoleView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
