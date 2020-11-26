@@ -47,20 +47,41 @@
                 Цена @item.Price.ToString("c")
             </div>
             
-            @using (Html.BeginForm("Purchase", "Cart", 
-                new
-                {
-                    @id= item.ProductId,
-                    @returnUrl = Request?.Url?.PathAndQuery
-                }))
+            @if (User.IsInRole("content_manager"))
             {
-                <div class="col-lg-10 col-sm-6">
-                    <button type="submit" class="btn btn-success pull-right">
-                        Купить
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </button>
-                </div>
+                using (Html.BeginForm("EditProduct", "Content", 
+                    new
+                    {
+                        @productId = item.ProductId,
+                        @returnUrl = Request?.Url?.PathAndQuery
+                    }))
+                {
+                    <div class="col-lg-10 col-sm-6">
+                        <button type="submit" class="btn btn-warning pull-right">
+                            Изменить товар
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                    </div>
+                }
             }
+            else
+            {
+                using (Html.BeginForm("Purchase", "Cart", 
+                    new
+                    {
+                        @id= item.ProductId,
+                        @returnUrl = Request?.Url?.PathAndQuery
+                    }))
+                {
+                    <div class="col-lg-10 col-sm-6">
+                        <button type="submit" class="btn btn-success pull-right">
+                            Купить
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </button>
+                    </div>
+                }
+            }
+            
         </div>
     </div>
     <br />

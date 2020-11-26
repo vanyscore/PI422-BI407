@@ -23,7 +23,7 @@ namespace AspCitylink.Infrastructure
     }
 
     public class MyContextInitializer 
-        : DropCreateDatabaseAlways<UsersDbContext>
+        : DropCreateDatabaseIfModelChanges<UsersDbContext>
     {
         private ApplicationUserManager _userManager;
         private RoleManager<UserRole> _roleManager;

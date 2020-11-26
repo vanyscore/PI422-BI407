@@ -45,6 +45,7 @@ namespace AspCitylink.Controllers
             return View(model);
         }
 
+        // Guid = Global Unique Identifier
         public async Task<ActionResult> AddUserToRole(string roleId, string userId)
         {
             var role = RolesManager.FindById(roleId);
