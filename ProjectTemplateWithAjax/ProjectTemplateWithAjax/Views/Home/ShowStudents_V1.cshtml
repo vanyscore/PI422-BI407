@@ -1,0 +1,46 @@
+﻿@using ProjectTemplateWithAjax.Models
+@model IEnumerable<ProjectTemplateWithAjax.Models.Student>
+
+@{
+    ViewBag.Title = "ShowStudents_V1";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<table class="highlight">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Firstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lastname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AcademicGroup)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcademicGroup)
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<div>
+    <div >
+        @Html.DropDownList("selectedGroup", new SelectList(Enum.GetNames(typeof(AcademicGroup)), new { @style = "display: block;" }))
+    </div>
+</div>
