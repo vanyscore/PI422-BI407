@@ -1,0 +1,98 @@
+﻿@using ProjectTemplateWithAjax.Models
+
+@{
+    ViewBag.Title = "ShowStudents_V2";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<input type="text" />
+
+<table class="highlight">
+    <tr>
+        <th>
+            Имя
+        </th>
+        <th>
+            Фамилия
+        </th>
+        <th>
+            Группа
+        </th>
+    </tr>
+
+    <tbody id="tbody">
+
+    </tbody>
+    
+</table>
+
+<br />
+
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="input-field col s12">
+                @Html.DropDownList(
+                "selectedGroup",
+                new SelectList(
+                    Enum.GetNames(typeof(AcademicGroup))
+                    ))
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <button class="btn waves-effect waves-light"
+                    type="submit" name="action">
+                Обновить!
+                <i class="material-icons right">
+                    send
+                </i>
+            </button>
+        </div>
+    </div>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            // alert("Work!");
+
+            // перехватываем выбор группы в списке через jquery
+            // и запрос на сервер через ajax
+            $("#selectedGroup").change(function () {
+                group = $("#selectedGroup").val();
+                // alert(group);
+
+                listGroup = ["ПИ-322", "ПИ-223", "ПИ-124"];
+
+                // POST-запрос на сервер - только студентов!!!
+                $.post('@Url.Action("GetStudentsJson", "Home")', // адрес на сервере
+                    { "selectedGroup": group }, // что просим
+                    function (result) { // результат прилетает
+                        // alert(result);
+                        var students = jQuery.parseJSON(result);
+
+                        html = "";
+                        $.each(students, function (i, stud) {
+                            // console.log(stud.Firstname);
+                            html += "<tr>";
+
+                            html += "<td>" + stud.Firstname + "</td>";
+                            html += "<td>" + stud.Lastname + "</td>";
+                            html += "<td>" + listGroup[stud.AcademicGroup] + "</td>";
+
+                            html += "</tr>";
+                        });
+                        $("#tbody").html(html);
+                })
+            });
+
+        });
+    </script>
+}
+
+

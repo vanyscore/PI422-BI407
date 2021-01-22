@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Главная страница";
+}
+
+    <div class="col s12 m4">
+        <div class="icon-block">
+        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Классическое в/д</h5>
+            
+            @Html.ActionLink(" 1. Классика", 
+                "ShowStudents_V1", null, 
+                new {@class= "btn-large waves-effect waves-light teal lighten-1" } )
+
+        </div>
+    </div>
+
+    <div class="col s12 m4">
+        <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+           @Html.ActionLink(" 2. ajax+jquery",
+                "ShowStudents_V2", null,
+                new {@class= "btn-large waves-effect waves-light teal lighten-1" } )
+
+        </div>
+    </div>
+
+    <div class="col s12 m4">
+        <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <a href=""
+               class="btn-large waves-effect waves-light teal lighten-1">
+                3. asp-ajax
+            </a>
+
+        </div>
+    </div>
