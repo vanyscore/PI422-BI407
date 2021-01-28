@@ -14,7 +14,11 @@
 <body>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            @Html.ActionLink("Главная", "Index", null, new
+           {
+               @class= "brand-logo",
+               @id= "logo-container"
+           })
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Navbar Link</a></li>
             </ul>
@@ -118,9 +122,11 @@
     </footer>
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Scripts/materialize.js"></script>
     <script src="~/Scripts/init.js"></script>
+
     @RenderSection("scripts", false)
 
 </body>

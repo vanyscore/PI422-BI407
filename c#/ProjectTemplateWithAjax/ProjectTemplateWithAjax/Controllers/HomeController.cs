@@ -43,6 +43,11 @@ namespace ProjectTemplateWithAjax.Controllers
             return View();
         }
 
+        public ActionResult ShowStudents_V3()
+        {
+            return View();
+        }
+
         public string GetStudentsJson(string selectedGroup)
         {
             var students = DataManager.GetStudents()
@@ -51,6 +56,15 @@ namespace ProjectTemplateWithAjax.Controllers
             string json = JsonConvert.SerializeObject(students);
             // возвращает только студентов
             return json;
+        }
+
+        public PartialViewResult PartialViewTableStudents(string selectedGroup)
+        {
+            var students = DataManager.GetStudents()
+                .Where(s => s.AcademicGroup.ToString() == selectedGroup)
+                .ToList();
+
+            return PartialView(students);
         }
     }
 }

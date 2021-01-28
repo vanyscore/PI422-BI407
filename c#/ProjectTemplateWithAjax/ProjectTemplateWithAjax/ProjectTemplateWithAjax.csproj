@@ -139,6 +139,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\init.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\materialize.js" />
     <Content Include="Scripts\materialize.min.js" />
     <Content Include="Web.config" />
@@ -165,6 +166,8 @@
     <None Include="packages.config" />
     <Content Include="Views\Home\ShowStudents_V1.cshtml" />
     <Content Include="Views\Home\ShowStudents_V2.cshtml" />
+    <Content Include="Views\Home\PartialViewTableStudents.cshtml" />
+    <Content Include="Views\Home\ShowStudents_V3.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

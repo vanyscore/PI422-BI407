@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ProjectTemplateWithAjax.Models.Student>
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Firstname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lastname)
+        </td>
+    </tr>
+}
+
