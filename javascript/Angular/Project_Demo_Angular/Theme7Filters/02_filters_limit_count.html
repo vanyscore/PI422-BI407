@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Подключаем главный модуль к странице -->
+<html ng-app="mainApp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project DEMO Angular</title>
+    <script src="../angular/angular.min.js"></script>
+    <script>
+        // создаем главный модуль
+        let mainApp = angular.module("mainApp", []);
+
+        // модель данных(MVC)
+        let model = [
+            { 
+                category: "Молчные",
+                name: "Молоко", 
+                price: 55, 
+                quantity: 10, 
+                expiration: 7
+            },
+            { 
+                category: "Молчные",
+                name: "Мороженое", 
+                price: 87, 
+                quantity: 20, 
+                expiration: 90
+            },
+            { 
+                category: "Хлебобулочные",
+                name: "Хлеб", 
+                price: 49, 
+                quantity: 50, 
+                expiration: 3
+            },
+            { 
+                category: "Хлебобулочные",
+                name: "Булочка", 
+                price: 20, 
+                quantity: 60, 
+                expiration: 6
+            },
+            { 
+                category: "Кондитерские",
+                name: "Пирожные", 
+                price: 120, 
+                quantity: 30, 
+                expiration: 12
+            },
+            { 
+                category: "Кондитерские",
+                name: "Торт", 
+                price: 430, 
+                quantity: 5, 
+                expiration: 30
+            },
+            { 
+                category: "Кондитерские",
+                name: "Конфеты", 
+                price: 50, 
+                quantity: 8, 
+                expiration: 7
+            },
+            { 
+                category: "Напитки",
+                name: "Минералка", 
+                price: 39, 
+                quantity: 100, 
+                expiration: 100
+            },
+            { 
+                category: "Напитки",
+                name: "Пепси", 
+                price: 80, 
+                quantity: 25, 
+                expiration: 360
+            }
+        ];
+
+        // создаем контроллер/ы в гданом модуле
+        mainApp.controller("mainController", function($scope) {
+            //$scope - встроенная стандартная переменная для 
+            //взаимодействия м/д контроллером и представлением
+            $scope.message = "Демо фильтры по количеству"
+            $scope.time = new Date()
+            $scope.products = model
+            $scope.intervals = [0, 2, 4, 6, 8, 10]
+            $scope.portion = $scope.intervals[0]
+
+            $scope.toExpDate = function(days) {
+                today = new Date()
+
+                return today.setDate(today.getDate() + days)
+            }
+        });
+    </script>
+</head>
+
+<!-- контроллер можно подключить к любой части страницы -->
+
+<body ng-controller="mainController">
+    <h1>Demo AngularJS</h1>
+    <h1> {{message}} {{time}} </h4>
+    <h1>Количество продуктов: {{products.length}}</h1>
+
+    <h3>
+        Сколько отображать на страницу
+    </h3>
+    <select 
+    ng-model="portion" 
+    ng-options="item for item in intervals">
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Категория</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Срок годности, ДН</th>
+                <th>Дата годности</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="p in products | limitTo: portion">
+                <td>{{$index + 1}}</td>
+                <td>{{p.category}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.price | currency}}</td>
+                <td>{{p.quantity}}</td>
+                <td>{{p.expiration | number}}</td>
+                <td>{{toExpDate(p.expiration) | date: "dd.MM.yyyy"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
