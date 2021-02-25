@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Подключаем главный модуль к странице -->
+<html ng-app="mainApp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project DEMO Angular</title>
+    <script src="../angular/angular.min.js"></script>
+    <script>
+        // создаем главный модуль
+        let mainApp = angular.module("mainApp", []);
+
+        // модель данных(MVC)
+        let model = [
+            { 
+                category: "молочные",
+                name: "Молоко",
+                price: 55,
+                quantinty: 10,
+                expiration: 3
+            },
+            { 
+                category: "молочные",
+                name: "Мороженое",
+                price: 87,
+                quantinty: 20,
+                expiration: 90
+            },
+            { 
+                category: "хлебобулочные",
+                name: "Батон",
+                price: 35,
+                quantinty: 80,
+                expiration: 4
+            },
+            { 
+                category: "хлебобулочные",
+                name: "Булочка",
+                price: 20,
+                quantinty: 60,
+                expiration: 6
+            },
+            { 
+                category: "кондитерские",
+                name: "Пирожное",
+                price: 120,
+                quantinty: 30,
+                expiration: 12
+            },
+            { 
+                category: "кондитерские",
+                name: "Торт",
+                price: 450,
+                quantinty: 5,
+                expiration: 30
+            },
+            { 
+                category: "кондитерские",
+                name: "Конфеты",
+                price: 600,
+                quantinty: 10,
+                expiration: 360
+            },
+            { 
+                category: "напитки",
+                name: "Минералка",
+                price: 45,
+                quantinty: 35,
+                expiration: 100
+            },
+            { 
+                category: "напитки",
+                name: "Пепси",
+                price: 80,
+                quantinty: 25,
+                expiration: 360
+            }
+        ];
+
+        // создаем контроллер/ы в гданом модуле
+        mainApp.controller("mainController", function($scope) {
+            //$scope - встроенная стандартная переменная для 
+            //взаимодействия м/д контроллером и представлением
+            $scope.message = "Пользовательский директивы"
+            $scope.products = model
+            $scope.students = [
+                {
+                    name: "Вася",
+                    age: 18
+                },
+                {
+                    name: "Петя",
+                    age: 19
+                },
+                {
+                    name: "Коля",
+                    age: 20
+                }
+            ]
+
+            $scope.toExpirationDate = function(days){
+                today = new Date()
+                return today.setDate( today.getDate() + days);
+            }
+        });
+
+        // Создание пользовательской директивы
+        mainApp.directive("itemsList", function() {
+            return function(scope, htmlEl, htmlElAttrs) {
+                // Значение аттрибута
+                var attrValue = htmlElAttrs["itemsList"]
+                // Имя свойства по аттрибуту
+                var property = htmlElAttrs["displayProperty"]
+                // Достаём данные из scope
+                var data = scope[attrValue]
+                // Формируем DOM документа
+                if (angular.isArray(data)) {
+                    var element = angular.element("<ol>")
+                    
+                    htmlEl.append(element)
+
+                    for (var i = 0; i < data.length; i++) {
+                        element.append(
+                            angular.element("<li>")
+                                .text(data[i][property])
+                        )
+                    }
+                }
+            }
+        })
+    </script>
+</head>
+
+<!-- контроллер можно подключить к любой части страницы -->
+
+<body ng-controller="mainController">
+    <h4> {{message}} {{time}} </h4>
+
+    <div>
+        <div items-list="products" display-property="price">
+
+        </div>
+    </div>
+    <div>
+        <div items-list="students" display-property="age">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
