@@ -1,4 +1,0 @@
-D:\Midis\ProjectBlazorDemo\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.csprojAssemblyReference.cache
-D:\Midis\ProjectBlazorDemo\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.AssemblyInfoInputs.cache
-D:\Midis\ProjectBlazorDemo\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.AssemblyInfo.cs
-D:\Midis\ProjectBlazorDemo\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.csproj.CoreCompileInputs.cache
